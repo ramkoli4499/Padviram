@@ -57,3 +57,26 @@ function changeLanguage() {
     if (el) el.innerText = strings[key];
   }
 }
+
+// Handle form submission to backend
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://padviram-backend.onrender.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const result = await response.text();
+      alert(result);
+      form.reset();
+    } catch (err) {
+      alert("Something went wrong while submitting. Please try again.");
+      console.error(err);
+    }
+  });
+});

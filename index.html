@@ -2,66 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Padviram Employee Services">
-  <title>Padviram</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padviram Employee Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa;
+      color: #1B2A49;
+    }
+    header {
+      background-color: #1B2A49;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .lang-selector {
+      margin-top: 10px;
+      text-align: center;
+    }
+    select {
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .hero, .section, .footer {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .footer {
+      background-color: #1B2A49;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>पदवीराम कर्मचारी सेवा</h1>
+    <h1 id="title">Padviram Employee Services</h1>
     <nav>
-      <select id="language-select">
+      <a href="#about" id="nav-about">About</a>
+      <a href="#services" id="nav-services">Services</a>
+      <a href="#join" id="nav-join">Join Us</a>
+      <a href="#contact" id="nav-contact">Contact</a>
+    </nav>
+    <div class="lang-selector">
+      <select id="languageSelector" onchange="changeLanguage()">
         <option value="en">English</option>
         <option value="hi">हिंदी</option>
         <option value="mr">मराठी</option>
         <option value="kn">ಕನ್ನಡ</option>
       </select>
-    </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2 data-en="Explore Government Jobs"
-          data-hi="सरकारी नौकरियाँ खोजें"
-          data-mr="शासकीय नोकऱ्या शोधा"
-          data-kn="ಸರ್ಕಾರಿ ಉದ್ಯೋಗಗಳನ್ನು ಅನ್ವೇಷಿಸಿ">
-        Explore Government Jobs
-      </h2>
-      <a href="https://www.ncs.gov.in/" target="_blank">Visit NCS Portal</a>
-    </section>
+  <section class="hero">
+    <h1 id="hero-title">After graduation, let your job journey begin with us!</h1>
+    <p id="hero-sub">Your trusted partner in career building.</p>
+  </section>
 
-    <section>
-      <form id="resume-form">
-        <h3 data-en="Submit Your Resume"
-            data-hi="अपना रिज़्यूमे जमा करें"
-            data-mr="तुमचा रिझ्युमे सबमिट करा"
-            data-kn="ನಿಮ್ಮ ರೆಜ್ಯೂಮೆ ಸಲ್ಲಿಸಿ">
-          Submit Your Resume
-        </h3>
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <input type="file" name="resume" accept=".pdf,.doc,.docx" required />
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  </main>
+  <section id="about" class="section">
+    <h2 id="about-title">About Us</h2>
+    <p id="about-desc">We support fresh graduates in building resumes, preparing for interviews, and getting job-ready.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 id="contact-title">Contact Us</h2>
+    <p><strong>Email:</strong> support@padviram.com</p>
+    <p><strong>Phone:</strong> +91 9503621862</p>
+    <p><strong>Address:</strong> Padviram Employee Services, Pune, Maharashtra</p>
+    <p>Follow us on:
+      <a href="https://facebook.com/padviram" target="_blank">Facebook</a> |
+      <a href="https://instagram.com/padviram" target="_blank">Instagram</a> |
+      <a href="https://linkedin.com/company/padviram" target="_blank">LinkedIn</a> |
+      <a href="https://wa.me/919503621862" target="_blank">WhatsApp</a>
+    </p>
+  </section>
 
   <footer class="footer">
-    <span
-      data-en="© 2025 Padviram Employee Services | Privacy Policy | Terms of Use"
-      data-mr="© 2025 पदवीराम कर्मचारी सेवा | गोपनीयता धोरण | वापर अटी"
-      data-hi="© 2025 पदवीराम कर्मचारी सेवा | गोपनीयता नीति | उपयोग की शर्तें"
-      data-kn="© 2025 ಪದ್ವಿರಾಮ ನೌಕರ ಸೇವೆಗಳು | ಗೌಪ್ಯತಾ ನಿತಿ | ಬಳಕೆಯ ನಿಯಮಗಳು"
-    >
-      © 2025 Padviram Employee Services | Privacy Policy | Terms of Use
-    </span>
-    <div class="social-links">
-      <a href="https://www.instagram.com/padviram.in?igsh=MXQ0OHc4dWNwZG4zaw==" target="_blank">Instagram</a>
-      <a href="https://whatsapp.com/channel/0029VbAsYEcCBtxCoHfgYk3Y" target="_blank">WhatsApp</a>
-      <a href="https://www.facebook.com/share/1A9s1kR1GR/" target="_blank">Facebook</a>
-      <a href="https://www.linkedin.com/company/padviram-emplosee-services/" target="_blank">LinkedIn</a>
-    </div>
+    © 2025 Padviram Employee Services | Privacy Policy | Terms of Use
   </footer>
 
   <script src="script.js"></script>
