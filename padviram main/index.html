@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Padviram - Government Job Portal & Resume Submission Platform">
+  <title>Padviram | Government Jobs & Resume Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>पदविराम (Padviram)</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#jobs">Government Jobs</a>
+      <a href="#submit">Submit Resume</a>
+      <a href="#contact">Contact</a>
+      <div class="lang-switcher">
+        <button onclick="changeLang('en')">EN</button>
+        <button onclick="changeLang('hi')">हिंदी</button>
+        <button onclick="changeLang('mr')">मराठी</button>
+        <button onclick="changeLang('kn')">ಕನ್ನಡ</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2 data-en="Welcome!" data-hi="स्वागत है!" data-mr="स्वागत आहे!" data-kn="ಸ್ವಾಗತ!" class="lang-text">Welcome!</h2>
+      <p data-en="Explore government job opportunities and submit your resume." data-hi="सरकारी नौकरी के अवसरों की खोज करें और अपना रिज़्यूमे जमा करें।" data-mr="शासकीय नोकऱ्यांच्या संधी शोधा आणि आपला रिझ्युमे सबमिट करा." data-kn="ಸರ್ಕಾರಿ ಉದ್ಯೋಗ ಅವಕಾಶಗಳನ್ನು ಅನ್ವೇಷಿಸಿ ಮತ್ತು ನಿಮ್ಮ ರೆಜ್ಯೂಮ್ ಅನ್ನು ಸಲ್ಲಿಸಿ." class="lang-text">
+        Explore government job opportunities and submit your resume.
+      </p>
+    </section>
+
+    <section id="jobs">
+      <h3>Explore Jobs</h3>
+      <a href="https://www.ncs.gov.in" target="_blank">Visit National Career Service Portal</a>
+    </section>
+
+    <section id="submit">
+      <h3>Submit Your Resume</h3>
+      <form id="resumeForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="file" name="resume" accept=".pdf,.doc,.docx" required />
+        <button type="submit">Upload Resume</button>
+      </form>
+      <p id="responseMsg"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Follow us:</p>
+    <a href="https://facebook.com">Facebook</a> |
+    <a href="https://twitter.com">Twitter</a> |
+    <a href="https://instagram.com">Instagram</a>
+    <p>&copy; 2025 Padviram. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
