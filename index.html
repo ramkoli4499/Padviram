@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -659,6 +659,586 @@
             justify-content: center;
             cursor: pointer;
         }
+
+        /* Employee Form Styles */
+        .employee-form-wrapper {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .employee-form-header {
+            background: linear-gradient(135deg, #1a6fc4 0%, #2c3e50 100%);
+            color: white;
+            padding: 25px 40px;
+            text-align: center;
+        }
+
+        .employee-form-logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .employee-form-logo {
+            width: 70px;
+            height: 70px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .employee-form-logo i {
+            font-size: 32px;
+            color: #1a6fc4;
+        }
+
+        .employee-form-company-name {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .employee-form-company-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        .employee-form-company-info div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .employee-form-content {
+            padding: 30px 40px;
+        }
+
+        .employee-form-title {
+            text-align: center;
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eaeaea;
+        }
+
+        .employee-form-section {
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 8px;
+            background: #f9fbfd;
+            border-left: 5px solid #1a6fc4;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .employee-form-section-title {
+            font-size: 20px;
+            color: #1a6fc4;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .employee-form-section-title i {
+            font-size: 22px;
+        }
+
+        .employee-form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .employee-form-group {
+            flex: 1 1 calc(50% - 20px);
+            min-width: 250px;
+        }
+
+        .employee-form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .employee-form-input, .employee-form-select, .employee-multiselect {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border 0.3s ease;
+            background-color: white;
+            color: #333;
+        }
+
+        .employee-form-input:focus, .employee-form-select:focus, .employee-multiselect:focus {
+            outline: none;
+            border-color: #1a6fc4;
+            box-shadow: 0 0 0 3px rgba(26, 111, 196, 0.2);
+        }
+
+        .employee-checkbox-group, .employee-radio-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .employee-checkbox-item, .employee-radio-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Multiselect styles */
+        .employee-multiselect-container {
+            position: relative;
+        }
+
+        .employee-multiselect {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: white;
+        }
+
+        .employee-multiselect-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 10;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .employee-multiselect-option {
+            padding: 12px 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .employee-multiselect-option:hover {
+            background: #f0f7ff;
+        }
+
+        .employee-multiselect-option input {
+            margin: 0;
+        }
+
+        .employee-selected-languages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .employee-language-tag {
+            background: #e8f4ff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .employee-language-tag i {
+            cursor: pointer;
+            font-size: 12px;
+            color: #1a6fc4;
+        }
+
+        .employee-photo-upload {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .employee-photo-preview {
+            width: 100px;
+            height: 120px;
+            border: 2px dashed #1a6fc4;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px;
+            background: #f7f9fb;
+        }
+
+        .employee-upload-btn {
+            padding: 10px 20px;
+            background: #1a6fc4;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .employee-upload-btn:hover {
+            background: #155a9d;
+        }
+
+        .employee-declaration {
+            background: #e8f4ff;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 5px solid #1a6fc4;
+        }
+
+        .employee-declaration-text {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .employee-signature-area {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .employee-signature-box {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .employee-signature-line {
+            height: 2px;
+            background: #ccc;
+            margin: 40px 0 10px;
+        }
+
+        .employee-action-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .employee-preview-btn, .employee-submit-btn {
+            padding: 16px 30px;
+            background: #1a6fc4;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .employee-preview-btn {
+            background: #2c3e50;
+        }
+
+        .employee-preview-btn:hover {
+            background: #1a252f;
+        }
+
+        .employee-submit-btn:hover {
+            background: #155a9d;
+        }
+
+        .employee-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .employee-modal-content {
+            background: white;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .employee-close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 28px;
+            cursor: pointer;
+            color: #777;
+        }
+
+        .employee-preview-section {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .employee-preview-title {
+            font-size: 20px;
+            color: #1a6fc4;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .employee-preview-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        .employee-preview-item {
+            flex: 1 1 calc(50% - 20px);
+            min-width: 250px;
+        }
+
+        .employee-preview-label {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .employee-preview-value {
+            color: #555;
+        }
+
+        .employee-modal-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .employee-edit-btn, .employee-confirm-btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .employee-edit-btn {
+            background: #eaeaea;
+            color: #333;
+        }
+
+        .employee-edit-btn:hover {
+            background: #d5d5d5;
+        }
+
+        .employee-confirm-btn {
+            background: #28a745;
+            color: white;
+        }
+
+        .employee-confirm-btn:hover {
+            background: #218838;
+        }
+
+        .employee-success-message {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            max-width: 600px;
+        }
+
+        .employee-success-icon {
+            font-size: 64px;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        .employee-notification-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #17a2b8;
+        }
+
+        .employee-notification-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .employee-notification-icon {
+            font-size: 24px;
+            color: #17a2b8;
+        }
+
+        .employee-notification-content {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e9ecef;
+        }
+
+        .employee-notification-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .employee-notification-item:last-child {
+            border-bottom: none;
+        }
+
+        .employee-notification-badge {
+            background: #17a2b8;
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        .employee-chatbot-toggle {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            background: #1a6fc4;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 9999;
+        }
+
+        .employee-chatbot-container {
+            position: fixed;
+            bottom: 160px;
+            right: 20px;
+            width: 320px;
+            height: 400px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 9999;
+        }
+
+        .employee-chatbot-header {
+            background: #1a6fc4;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .employee-chatbot-messages {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+            font-size: 14px;
+        }
+
+        .employee-chatbot-input {
+            display: flex;
+            border-top: 1px solid #ddd;
+        }
+
+        .employee-chatbot-input input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+        }
+
+        .employee-chatbot-input button {
+            padding: 10px 15px;
+            background: #1a6fc4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .employee-form-group, .employee-preview-item {
+                flex: 1 1 100%;
+            }
+            
+            .employee-form-header {
+                padding: 20px;
+            }
+            
+            .employee-form-content {
+                padding: 20px;
+            }
+            
+            .employee-form-company-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .employee-action-buttons {
+                flex-direction: column;
+            }
+            
+            .employee-modal-content {
+                width: 95%;
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -667,7 +1247,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2ZmZmZmZiIvPjx0ZXh0IHg9IjEwMCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNDAiIGZpbGw9IiMyNTYzZWIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPlA8L3RleHQ+PC9zdmc+" alt="Padviram Logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQPSIxMDAlIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSIxMDAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQwIiBmaWxsPSIjMjU2M2ViIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5QPC90ZXh0Pjwvc3ZnPg==" alt="Padviram Logo">
                     <h1>Padviram HR</h1>
                 </div>
                 <div class="user-actions">
@@ -690,6 +1270,7 @@
                 <li><a href="#attendance"><i class="fas fa-calendar-check"></i> Attendance</a></li>
                 <li><a href="#leave"><i class="fas fa-calendar-day"></i> Leave</a></li>
                 <li><a href="#employees"><i class="fas fa-users"></i> Employees</a></li>
+                <li><a href="#employee-form"><i class="fas fa-file-alt"></i> Employee Form</a></li>
                 <li><a href="#ai-tools"><i class="fas fa-robot"></i> AI Tools</a></li>
                 <li><a href="#profile"><i class="fas fa-user"></i> Profile</a></li>
             </ul>
@@ -990,6 +1571,674 @@
                 </div>
             </section>
 
+            <!-- Employee Form Section -->
+            <section id="employee-form-section" class="hidden">
+                <div class="section-title">
+                    <span>Employee Joining Form</span>
+                </div>
+
+                <div class="employee-form-wrapper">
+                    <div class="employee-form-header">
+                        <div class="employee-form-logo-container">
+                            <div class="employee-form-logo">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h1 class="employee-form-company-name">PADVIRAM</h1>
+                        </div>
+                        <div class="employee-form-company-info">
+                            <div><i class="fas fa-map-marker-alt"></i> Flat 201, Freesiasky 1, SNBP School Road, Manjari BK, Pune – 412307</div>
+                            <div><i class="fas fa-phone"></i> 9503621862</div>
+                            <div><i class="fas fa-globe"></i> www.padviram.in</div>
+                            <div><i class="fas fa-envelope"></i> support@padviram.com</div>
+                        </div>
+                    </div>
+                    <div class="employee-form-content">
+                        <h2 class="employee-form-title">Employee / Labour Joining Form</h2>
+                        <form id="employeeForm">
+                            <div class="employee-form-section">
+                                <h3 class="employee-form-section-title"><i class="fas fa-user"></i> Personal Details</h3>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Full Name *</label>
+                                        <input class="employee-form-input" placeholder="Enter full name" required="" type="text"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Father's Name *</label>
+                                        <input class="employee-form-input" placeholder="Enter father's name" required="" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Mother's Name *</label>
+                                        <input class="employee-form-input" placeholder="Enter mother's name" required="" type="text"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Date of Birth *</label>
+                                        <input class="employee-form-input" required="" type="date"/>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Gender *</label>
+                                        <div class="employee-radio-group">
+                                            <div class="employee-radio-item">
+                                                <input id="male" name="gender" required="" type="radio" value="Male"/>
+                                                <label for="male">Male</label>
+                                            </div>
+                                            <div class="employee-radio-item">
+                                                <input id="female" name="gender" type="radio" value="Female"/>
+                                                <label for="female">Female</label>
+                                            </div>
+                                            <div class="employee-radio-item">
+                                                <input id="other" name="gender" type="radio" value="Other"/>
+                                                <label for="other">Other</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Blood Group</label>
+                                        <select class="employee-form-select">
+                                            <option value="">Select Blood Group</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A-">A-</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B-">B-</option>
+                                            <option value="AB+">AB+</option>
+                                            <option value="AB-">AB-</option>
+                                            <option value="O+">O+</option>
+                                            <option value="O-">O-</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Marital Status *</label>
+                                        <div class="employee-radio-group">
+                                            <div class="employee-radio-item">
+                                                <input id="single" name="marital" required="" type="radio" value="Single"/>
+                                                <label for="single">Single</label>
+                                            </div>
+                                            <div class="employee-radio-item">
+                                                <input id="married" name="marital" type="radio" value="Married"/>
+                                                <label for="married">Married</label>
+                                            </div>
+                                            <div class="employee-radio-item">
+                                                <input id="other-marital" name="marital" type="radio" value="Other"/>
+                                                <label for="other-marital">Other</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Nationality *</label>
+                                        <input class="employee-form-input" placeholder="Enter nationality" required="" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Photo</label>
+                                        <div class="employee-photo-upload">
+                                            <div class="employee-photo-preview">Upload 3x3 cm Photo</div>
+                                            <button class="employee-upload-btn" type="button">Upload Photo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employee-form-section">
+                                <h3 class="employee-form-section-title"><i class="fas fa-graduation-cap"></i> Education Details</h3>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Highest Qualification *</label>
+                                        <input class="employee-form-input" placeholder="Enter highest qualification" required="" type="text"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Institution / Board *</label>
+                                        <input class="employee-form-input" placeholder="Enter institution/board" required="" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Year of Passing *</label>
+                                        <input class="employee-form-input" max="2030" min="1950" placeholder="Enter year of passing" required="" type="number"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Other Courses / Certifications</label>
+                                        <input class="employee-form-input" placeholder="Enter other certifications" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Languages Known *</label>
+                                        <div class="employee-multiselect-container">
+                                            <div class="employee-multiselect" id="languagesDropdown">
+                                                <span id="selectedLanguagesText">Select languages</span>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                            <div class="employee-multiselect-dropdown" id="languagesOptions">
+                                                <div class="employee-multiselect-option">
+                                                    <input id="lang-english" type="checkbox" value="English"/>
+                                                    <label for="lang-english">English</label>
+                                                </div>
+                                                <div class="employee-multiselect-option">
+                                                    <input id="lang-hindi" type="checkbox" value="Hindi"/>
+                                                    <label for="lang-hindi">Hindi</label>
+                                                </div>
+                                                <div class="employee-multiselect-option">
+                                                    <input id="lang-marathi" type="checkbox" value="Marathi"/>
+                                                    <label for="lang-marathi">Marathi</label>
+                                                </div>
+                                                <div class="employee-multiselect-option">
+                                                    <input id="lang-gujarati" type="checkbox" value="Gujarati"/>
+                                                    <label for="lang-gujarati">Gujarati</label>
+                                                </div>
+                                                <div class="employee-multiselect-option">
+                                                    <input id="lang-tamil" type="checkbox" value="Tamil"/>
+                                                    <label for="lang-tamil">Tamil</label>
+                                                </div>
+                                                <div class="employee-multiselect-option">
+                                                    <input id="lang-telugu" type="checkbox" value="Telugu"/>
+                                                    <label for="lang-telugu">Telugu</label>
+                                                </div>
+                                                <div class="employee-multiselect-option">
+                                                    <input id="lang-kannada" type="checkbox" value="Kannada"/>
+                                                    <label for="lang-kannada">Kannada</label>
+                                                </div>
+                                                <div class="employee-multiselect-option">
+                                                    <input id="lang-malayalam" type="checkbox" value="Malayalam"/>
+                                                    <label for="lang-malayalam">Malayalam</label>
+                                                </div>
+                                                <div class="employee-multiselect-option">
+                                                    <input id="lang-bengali" type="checkbox" value="Bengali"/>
+                                                    <label for="lang-bengali">Bengali</label>
+                                                </div>
+                                                <div class="employee-multiselect-option">
+                                                    <input id="lang-punjabi" type="checkbox" value="Punjabi"/>
+                                                    <label for="lang-punjabi">Punjabi</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="employee-selected-languages" id="selectedLanguages"></div>
+                                        <input id="languagesValue" name="languages" required="" type="hidden"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employee-form-section">
+                                <h3 class="employee-form-section-title"><i class="fas fa-address-book"></i> Contact Information</h3>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Mobile No. *</label>
+                                        <input class="employee-form-input" id="mobileNumber" placeholder="Enter mobile number" required="" type="tel"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Email *</label>
+                                        <input class="employee-form-input" id="emailAddress" placeholder="Enter email address" required="" type="email"/>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Permanent Address *</label>
+                                        <input class="employee-form-input" placeholder="Enter permanent address" required="" type="text"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Present Address</label>
+                                        <input class="employee-form-input" placeholder="Enter present address" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employee-form-section">
+                                <h3 class="employee-form-section-title"><i class="fas fa-id-card"></i> Identity Details</h3>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Aadhaar No. *</label>
+                                        <input class="employee-form-input" placeholder="Enter Aadhaar number" required="" type="text"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">PAN No.</label>
+                                        <input class="employee-form-input" placeholder="Enter PAN number" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Voter ID / Passport</label>
+                                        <input class="employee-form-input" placeholder="Enter Voter ID or Passport" type="text"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Driving License (if any)</label>
+                                        <input class="employee-form-input" placeholder="Enter driving license number" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employee-form-section">
+                                <h3 class="employee-form-section-title"><i class="fas fa-university"></i> Bank Details</h3>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Bank Name *</label>
+                                        <input class="employee-form-input" placeholder="Enter bank name" required="" type="text"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Account Number *</label>
+                                        <input class="employee-form-input" placeholder="Enter account number" required="" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">IFSC Code *</label>
+                                        <input class="employee-form-input" placeholder="Enter IFSC code" required="" type="text"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Branch Address *</label>
+                                        <input class="employee-form-input" placeholder="Enter branch address" required="" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employee-form-section">
+                                <h3 class="employee-form-section-title"><i class="fas fa-briefcase"></i> Job Related Information</h3>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Designation / Job Role *</label>
+                                        <input class="employee-form-input" placeholder="Enter designation" required="" type="text"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Department *</label>
+                                        <input class="employee-form-input" placeholder="Enter department" required="" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Work Location *</label>
+                                        <input class="employee-form-input" placeholder="Enter work location" required="" type="text"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Joining Date *</label>
+                                        <input class="employee-form-input" required="" type="date"/>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Salary / Wages *</label>
+                                        <input class="employee-form-input" placeholder="Enter salary/wages" required="" type="text"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Shift / Timing</label>
+                                        <input class="employee-form-input" placeholder="Enter shift/timing" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Previous Experience (if any)</label>
+                                        <input class="employee-form-input" placeholder="Enter previous experience" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employee-form-section">
+                                <h3 class="employee-form-section-title"><i class="fas fa-exclamation-circle"></i> Emergency Contact</h3>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Name *</label>
+                                        <input class="employee-form-input" placeholder="Enter emergency contact name" required="" type="text"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Relation *</label>
+                                        <input class="employee-form-input" placeholder="Enter relation" required="" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="employee-form-row">
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Mobile Number *</label>
+                                        <input class="employee-form-input" placeholder="Enter emergency mobile number" required="" type="tel"/>
+                                    </div>
+                                    <div class="employee-form-group">
+                                        <label class="employee-form-label">Address *</label>
+                                        <input class="employee-form-input" placeholder="Enter emergency contact address" required="" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employee-declaration">
+                                <p class="employee-declaration-text">
+                                    I hereby declare that the above information provided is true and correct to the best of my knowledge. 
+                                    I agree to abide by the rules and regulations of Padviram.
+                                </p>
+                                <div class="employee-signature-area">
+                                    <div class="employee-signature-box">
+                                        <div class="employee-signature-line"></div>
+                                        <label class="employee-form-label">Signature</label>
+                                    </div>
+                                    <div class="employee-signature-box">
+                                        <div class="employee-signature-line"></div>
+                                        <label class="employee-form-label">Date</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Terms & Conditions Section Added Here -->
+                            <div class="employee-form-section">
+                                <h3 class="employee-form-section-title"><i class="fas fa-file-contract"></i> Terms &amp; Conditions</h3>
+                                <ol>
+                                    <li>The information provided in this form must be accurate and complete. Any false information may result in termination of employment.</li>
+                                    <li>All employees must follow the policies, rules, and regulations set forth by Padviram.</li>
+                                    <li>Confidentiality of company data and client information must be maintained at all times.</li>
+                                    <li>Employees must serve the notice period as mentioned in their employment agreement before leaving the organization.</li>
+                                    <li>Padviram reserves the right to modify terms of employment as per company requirements and applicable laws.</li>
+                                    <li>Any disputes will be subject to the jurisdiction of Pune, Maharashtra.</li>
+                                    <li>Employees must maintain professional behavior and uphold the reputation of Padviram both inside and outside the workplace.</li>
+                                    <li>Attendance, punctuality, and discipline are mandatory. Repeated absenteeism or late coming may lead to disciplinary action.</li>
+                                    <li>Use of company resources (systems, internet, email, etc.) should be strictly for official purposes. Misuse may result in penalties.</li>
+                                    <li>Employees must immediately report any conflict of interest or activities that may harm the company's interests.</li>
+                                    <li>Consumption of alcohol, drugs, or any prohibited substances within company premises is strictly forbidden.</li>
+                                    <li>Harassment, discrimination, or misconduct of any kind will not be tolerated and may result in strict action.</li>
+                                    <li>Employees are expected to comply with all health, safety, and security protocols.</li>
+                                </ol>
+                            </div>
+                            <div class="employee-form-section">
+                                <h3 class="employee-form-section-title"><i class="fas fa-shield-alt"></i> Employee Rules &amp; Safety Guidelines</h3>
+                                <h4>Workplace Behavior</h4>
+                                <ul>
+                                    <li>Maintain respectful and professional communication with colleagues, clients, and management.</li>
+                                    <li>Avoid disruptive behavior, gossip, or any activity that creates a hostile work environment.</li>
+                                    <li>Dress appropriately as per company guidelines.</li>
+                                </ul>
+                                <h4>Attendance &amp; Leave</h4>
+                                <ul>
+                                    <li>Employees must adhere to official working hours.</li>
+                                    <li>Absence without prior approval will be treated as unauthorized leave.</li>
+                                    <li>Leave requests must be submitted in advance through the proper channel.</li>
+                                </ul>
+                                <h4>Use of Company Property</h4>
+                                <ul>
+                                    <li>Company equipment, tools, and resources should be handled responsibly.</li>
+                                    <li>Personal use of office property is not permitted.</li>
+                                    <li>Any damage or loss must be reported immediately to the management.</li>
+                                </ul>
+                                <h4>Safety Requirements</h4>
+                                <ul>
+                                    <li>Employees must wear required Personal Protective Equipment (PPE) in designated work areas.</li>
+                                    <li>Fire exits and emergency evacuation routes should always remain accessible.</li>
+                                    <li>Smoking is strictly prohibited except in designated areas.</li>
+                                    <li>All accidents, injuries, or unsafe conditions must be reported to the supervisor immediately.</li>
+                                    <li>Employees are required to participate in safety training and emergency drills.</li>
+                                </ul>
+                                <h4>General Conduct</h4>
+                                <ul>
+                                    <li>Unauthorized visitors are not allowed in restricted office areas.</li>
+                                    <li>Mobile phone usage should not disrupt work.</li>
+                                    <li>Theft, fraud, or misuse of company funds/property will lead to strict disciplinary action including legal proceedings.</li>
+                                </ul>
+                            </div>
+                            <div class="employee-action-buttons">
+                                <button class="employee-preview-btn" id="previewBtn" type="button">
+                                    <i class="fas fa-eye"></i> Preview Form
+                                </button>
+                                <button class="employee-submit-btn" type="submit">
+                                    <i class="fas fa-paper-plane"></i> Submit Form
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Preview Modal -->
+                <div class="employee-modal" id="previewModal">
+                    <div class="employee-modal-content">
+                        <span class="employee-close-modal" id="closeModal">×</span>
+                        <h2 class="employee-form-title">Form Preview</h2>
+                        <div class="employee-preview-section">
+                            <h3 class="employee-preview-title"><i class="fas fa-user"></i> Personal Details</h3>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Full Name</div>
+                                    <div class="employee-preview-value" id="preview-fullname"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Father's Name</div>
+                                    <div class="employee-preview-value" id="preview-fathername"></div>
+                                </div>
+                            </div>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Mother's Name</div>
+                                    <div class="employee-preview-value" id="preview-mothername"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Date of Birth</div>
+                                    <div class="employee-preview-value" id="preview-dob"></div>
+                                </div>
+                            </div>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Gender</div>
+                                    <div class="employee-preview-value" id="preview-gender"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Blood Group</div>
+                                    <div class="employee-preview-value" id="preview-bloodgroup"></div>
+                                </div>
+                            </div>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Marital Status</div>
+                                    <div class="employee-preview-value" id="preview-marital"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Nationality</div>
+                                    <div class="employee-preview-value" id="preview-nationality"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-preview-section">
+                            <h3 class="employee-preview-title"><i class="fas fa-graduation-cap"></i> Education Details</h3>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Highest Qualification</div>
+                                    <div class="employee-preview-value" id="preview-qualification"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Institution / Board</div>
+                                    <div class="employee-preview-value" id="preview-institution"></div>
+                                </div>
+                            </div>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Year of Passing</div>
+                                    <div class="employee-preview-value" id="preview-passingyear"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Other Certifications</div>
+                                    <div class="employee-preview-value" id="preview-certifications"></div>
+                                </div>
+                            </div>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Languages Known</div>
+                                    <div class="employee-preview-value" id="preview-languages"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-preview-section">
+                            <h3 class="employee-preview-title"><i class="fas fa-address-book"></i> Contact Information</h3>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Mobile No.</div>
+                                    <div class="employee-preview-value" id="preview-mobile"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Email</div>
+                                    <div class="employee-preview-value" id="preview-email"></div>
+                                </div>
+                            </div>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Permanent Address</div>
+                                    <div class="employee-preview-value" id="preview-permanent-address"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Present Address</div>
+                                    <div class="employee-preview-value" id="preview-present-address"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-preview-section">
+                            <h3 class="employee-preview-title"><i class="fas fa-id-card"></i> Identity Details</h3>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Aadhaar No.</div>
+                                    <div class="employee-preview-value" id="preview-aadhaar"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">PAN No.</div>
+                                    <div class="employee-preview-value" id="preview-pan"></div>
+                                </div>
+                            </div>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Voter ID / Passport</div>
+                                    <div class="employee-preview-value" id="preview-voter-passport"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Driving License</div>
+                                    <div class="employee-preview-value" id="preview-driving-license"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-preview-section">
+                            <h3 class="employee-preview-title"><i class="fas fa-university"></i> Bank Details</h3>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Bank Name</div>
+                                    <div class="employee-preview-value" id="preview-bank-name"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Account Number</div>
+                                    <div class="employee-preview-value" id="preview-account-number"></div>
+                                </div>
+                            </div>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">IFSC Code</div>
+                                    <div class="employee-preview-value" id="preview-ifsc"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Branch Address</div>
+                                    <div class="employee-preview-value" id="preview-branch-address"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-preview-section">
+                            <h3 class="employee-preview-title"><i class="fas fa-briefcase"></i> Job Related Information</h3>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Designation / Job Role</div>
+                                    <div class="employee-preview-value" id="preview-designation"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Department</div>
+                                    <div class="employee-preview-value" id="preview-department"></div>
+                                </div>
+                            </div>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Work Location</div>
+                                    <div class="employee-preview-value" id="preview-work-location"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Joining Date</div>
+                                    <div class="employee-preview-value" id="preview-joining-date"></div>
+                                </div>
+                            </div>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Salary / Wages</div>
+                                    <div class="employee-preview-value" id="preview-salary"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Shift / Timing</div>
+                                    <div class="employee-preview-value" id="preview-shift"></div>
+                                </div>
+                            </div>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Previous Experience</div>
+                                    <div class="employee-preview-value" id="preview-experience"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-preview-section">
+                            <h3 class="employee-preview-title"><i class="fas fa-exclamation-circle"></i> Emergency Contact</h3>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Name</div>
+                                    <div class="employee-preview-value" id="preview-emergency-name"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Relation</div>
+                                    <div class="employee-preview-value" id="preview-emergency-relation"></div>
+                                </div>
+                            </div>
+                            <div class="employee-preview-row">
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Mobile Number</div>
+                                    <div class="employee-preview-value" id="preview-emergency-mobile"></div>
+                                </div>
+                                <div class="employee-preview-item">
+                                    <div class="employee-preview-label">Address</div>
+                                    <div class="employee-preview-value" id="preview-emergency-address"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-modal-buttons">
+                            <button class="employee-edit-btn" id="editBtn" type="button">
+                                <i class="fas fa-edit"></i> Edit Form
+                            </button>
+                            <button class="employee-confirm-btn" id="confirmBtn" type="button">
+                                <i class="fas fa-check"></i> Confirm &amp; Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Message with Notification Details -->
+                <div class="employee-success-message" id="successMessage">
+                    <div class="employee-success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h2>Form Submitted Successfully!</h2>
+                    <p>Thank you for submitting your employee joining form. We will process your information shortly.</p>
+                    <div class="employee-notification-box">
+                        <div class="employee-notification-header">
+                            <i class="fas fa-paper-plane employee-notification-icon"></i>
+                            <h3>Confirmation Notifications Sent</h3>
+                        </div>
+                        <div class="employee-notification-content">
+                            <div class="employee-notification-item">
+                                <div class="employee-notification-badge">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="employee-preview-label">Email sent to:</div>
+                                    <div class="employee-preview-value" id="confirm-email">user@example.com</div>
+                                </div>
+                            </div>
+                            <div class="employee-notification-item">
+                                <div class="employee-notification-badge">
+                                    <i class="fas fa-sms"></i>
+                                </div>
+                                <div>
+                                    <div class="employee-preview-label">SMS sent to:</div>
+                                    <div class="employee-preview-value" id="confirm-mobile">+91 9876543210</div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    <p>You will receive a confirmation email and SMS within 24 hours with your employee ID and next steps.</p>
+                    <p>For any queries, please contact HR at <strong>hr@padviram.com</strong> or <strong>9503621862</strong>.</p>
+                    <div class="download-buttons">
+                        <button class="employee-upload-btn" id="printBtn" type="button">
+                            <i class="fas fa-print"></i> Print Form
+                        </button>
+                        <button class="employee-upload-btn" id="downloadBtn" type="button">
+                            <i class="fas fa-download"></i> Download as PDF
+                        </button>
+                    </div>
+                </div>
+            </section>
+
             <!-- AI Tools Section -->
             <section id="ai-tools-section" class="hidden">
                 <div class="section-title">
@@ -1101,6 +2350,20 @@
         </div>
     </div>
 
+    <!-- Employee Form Chatbot -->
+    <button class="employee-chatbot-toggle" id="employeeChatToggle">💬</button>
+    <div class="employee-chatbot-container" id="employeeChatbot">
+        <div class="employee-chatbot-header">
+            <span>🤖 Padviram AI Assistant</span>
+            <button id="employeeCloseChat">×</button>
+        </div>
+        <div class="employee-chatbot-messages" id="employeeChatMessages"></div>
+        <div class="employee-chatbot-input">
+            <input id="employeeChatInput" placeholder="Type your question..." type="text"/>
+            <button id="employeeSendBtn">Send</button>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -1108,6 +2371,9 @@
             <p>Contact: +91 9503621862 | support@padviram.in</p>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1233,7 +2499,7 @@
                 openChatBtn.addEventListener('click', function() {
                     // Switch to AI Tools nav item
                     navLinks.forEach(l => l.classList.remove('active'));
-                    document.querySelector('.nav-items li:nth-child(5) a').classList.add('active');
+                    document.querySelector('.nav-items li:nth-child(6) a').classList.add('active');
                     
                     // Show AI Tools section
                     sections.forEach(section => section.classList.add('hidden'));
@@ -1372,6 +2638,297 @@
             }
 
             initCharts();
+
+            // Employee Form JavaScript
+            const form = document.getElementById('employeeForm');
+            const previewBtn = document.getElementById('previewBtn');
+            const previewModal = document.getElementById('previewModal');
+            const closeModal = document.getElementById('closeModal');
+            const editBtn = document.getElementById('editBtn');
+            const confirmBtn = document.getElementById('confirmBtn');
+            const successMessage = document.getElementById('successMessage');
+            const container = document.querySelector('.employee-form-wrapper');
+            const confirmEmail = document.getElementById('confirm-email');
+            const confirmMobile = document.getElementById('confirm-mobile');
+            
+            // Language selection functionality
+            const languagesDropdown = document.getElementById('languagesDropdown');
+            const languagesOptions = document.getElementById('languagesOptions');
+            const selectedLanguagesContainer = document.getElementById('selectedLanguages');
+            const selectedLanguagesText = document.getElementById('selectedLanguagesText');
+            const languagesValue = document.getElementById('languagesValue');
+            const languageCheckboxes = document.querySelectorAll('#languagesOptions input[type="checkbox"]');
+            
+            // Toggle language dropdown
+            if (languagesDropdown) {
+                languagesDropdown.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    languagesOptions.style.display = languagesOptions.style.display === 'block' ? 'none' : 'block';
+                });
+                
+                // Close dropdown when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!languagesDropdown.contains(e.target) && !languagesOptions.contains(e.target)) {
+                        languagesOptions.style.display = 'none';
+                    }
+                });
+                
+                // Handle language selection
+                languageCheckboxes.forEach(checkbox => {
+                    checkbox.addEventListener('change', updateSelectedLanguages);
+                });
+                
+                function updateSelectedLanguages() {
+                    const selectedLanguages = [];
+                    selectedLanguagesContainer.innerHTML = '';
+                    
+                    languageCheckboxes.forEach(checkbox => {
+                        if (checkbox.checked) {
+                            selectedLanguages.push(checkbox.value);
+                            
+                            // Create tag for selected language
+                            const tag = document.createElement('div');
+                            tag.className = 'employee-language-tag';
+                            tag.innerHTML = `
+                                ${checkbox.value}
+                                <i class="fas fa-times" data-value="${checkbox.value}"></i>
+                            `;
+                            selectedLanguagesContainer.appendChild(tag);
+                        }
+                    });
+                    
+                    // Update display text and hidden input value
+                    if (selectedLanguages.length > 0) {
+                        selectedLanguagesText.textContent = selectedLanguages.join(', ');
+                        languagesValue.value = selectedLanguages.join(', ');
+                    } else {
+                        selectedLanguagesText.textContent = 'Select languages';
+                        languagesValue.value = '';
+                    }
+                    
+                    // Add event listeners to remove buttons
+                    const removeButtons = document.querySelectorAll('.employee-language-tag i');
+                    removeButtons.forEach(button => {
+                        button.addEventListener('click', function(e) {
+                            e.stopPropagation();
+                            const value = this.getAttribute('data-value');
+                            const checkbox = document.querySelector(`#languagesOptions input[value="${value}"]`);
+                            if (checkbox) {
+                                checkbox.checked = false;
+                                updateSelectedLanguages();
+                            }
+                        });
+                    });
+                }
+            }
+            
+            // Preview button click event
+            if (previewBtn) {
+                previewBtn.addEventListener('click', function() {
+                    // Validate form before showing preview
+                    if (!form.checkValidity()) {
+                        form.reportValidity();
+                        return;
+                    }
+                    
+                    // Update preview values
+                    updatePreview();
+                    
+                    // Show modal
+                    previewModal.style.display = 'block';
+                });
+            }
+            
+            // Close modal
+            if (closeModal) {
+                closeModal.addEventListener('click', function() {
+                    previewModal.style.display = 'none';
+                });
+            }
+            
+            // Edit button click event
+            if (editBtn) {
+                editBtn.addEventListener('click', function() {
+                    previewModal.style.display = 'none';
+                });
+            }
+            
+            // Confirm button click event
+            if (confirmBtn) {
+                confirmBtn.addEventListener('click', function() {
+                    previewModal.style.display = 'none';
+                    container.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    
+                    // Update confirmation details
+                    const email = document.getElementById('emailAddress').value;
+                    const mobile = document.getElementById('mobileNumber').value;
+                    
+                    confirmEmail.textContent = email;
+                    confirmMobile.textContent = '+91 ' + mobile;
+                    
+                    // In a real application, you would submit the form data to a server here
+                    // and trigger email/SMS notifications from the backend
+                });
+            }
+            
+            // Form submit event
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validate form
+                    if (!form.checkValidity()) {
+                        form.reportValidity();
+                        return;
+                    }
+                    
+                    // Show success message
+                    container.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    
+                    // Update confirmation details
+                    const email = document.getElementById('emailAddress').value;
+                    const mobile = document.getElementById('mobileNumber').value;
+                    
+                    confirmEmail.textContent = email;
+                    confirmMobile.textContent = '+91 ' + mobile;
+                    
+                    // In a real application, you would submit the form data to a server here
+                    // and trigger email/SMS notifications from the backend
+                });
+            }
+            
+            // Update preview with form values
+            function updatePreview() {
+                // Personal Details
+                document.getElementById('preview-fullname').textContent = form.querySelector('input[placeholder="Enter full name"]').value;
+                document.getElementById('preview-fathername').textContent = form.querySelector('input[placeholder="Enter father\'s name"]').value;
+                document.getElementById('preview-mothername').textContent = form.querySelector('input[placeholder="Enter mother\'s name"]').value;
+                document.getElementById('preview-dob').textContent = form.querySelector('input[type="date"]').value;
+                
+                const gender = form.querySelector('input[name="gender"]:checked');
+                document.getElementById('preview-gender').textContent = gender ? gender.value : '';
+                
+                document.getElementById('preview-bloodgroup').textContent = form.querySelector('select').value;
+                
+                const marital = form.querySelector('input[name="marital"]:checked');
+                document.getElementById('preview-marital').textContent = marital ? marital.value : '';
+                
+                document.getElementById('preview-nationality').textContent = form.querySelector('input[placeholder="Enter nationality"]').value;
+                
+                // Education Details
+                document.getElementById('preview-qualification').textContent = form.querySelector('input[placeholder="Enter highest qualification"]').value;
+                document.getElementById('preview-institution').textContent = form.querySelector('input[placeholder="Enter institution/board"]').value;
+                document.getElementById('preview-passingyear').textContent = form.querySelector('input[placeholder="Enter year of passing"]').value;
+                document.getElementById('preview-certifications').textContent = form.querySelector('input[placeholder="Enter other certifications"]').value;
+                document.getElementById('preview-languages').textContent = languagesValue.value || 'Not specified';
+                
+                // Contact Information
+                document.getElementById('preview-mobile').textContent = document.getElementById('mobileNumber').value;
+                document.getElementById('preview-email').textContent = document.getElementById('emailAddress').value;
+                document.getElementById('preview-permanent-address').textContent = form.querySelector('input[placeholder="Enter permanent address"]').value;
+                document.getElementById('preview-present-address').textContent = form.querySelector('input[placeholder="Enter present address"]').value || 'Same as permanent address';
+                
+                // Identity Details
+                document.getElementById('preview-aadhaar').textContent = form.querySelector('input[placeholder="Enter Aadhaar number"]').value;
+                document.getElementById('preview-pan').textContent = form.querySelector('input[placeholder="Enter PAN number"]').value || 'Not provided';
+                document.getElementById('preview-voter-passport').textContent = form.querySelector('input[placeholder="Enter Voter ID or Passport"]').value || 'Not provided';
+                document.getElementById('preview-driving-license').textContent = form.querySelector('input[placeholder="Enter driving license number"]').value || 'Not provided';
+                
+                // Bank Details
+                document.getElementById('preview-bank-name').textContent = form.querySelector('input[placeholder="Enter bank name"]').value;
+                document.getElementById('preview-account-number').textContent = form.querySelector('input[placeholder="Enter account number"]').value;
+                document.getElementById('preview-ifsc').textContent = form.querySelector('input[placeholder="Enter IFSC code"]').value;
+                document.getElementById('preview-branch-address').textContent = form.querySelector('input[placeholder="Enter branch address"]').value;
+                
+                // Job Related Information
+                document.getElementById('preview-designation').textContent = form.querySelector('input[placeholder="Enter designation"]').value;
+                document.getElementById('preview-department').textContent = form.querySelector('input[placeholder="Enter department"]').value;
+                document.getElementById('preview-work-location').textContent = form.querySelector('input[placeholder="Enter work location"]').value;
+                document.getElementById('preview-joining-date').textContent = form.querySelectorAll('input[type="date"]')[1].value;
+                document.getElementById('preview-salary').textContent = form.querySelector('input[placeholder="Enter salary/wages"]').value;
+                document.getElementById('preview-shift').textContent = form.querySelector('input[placeholder="Enter shift/timing"]').value || 'Standard shift';
+                document.getElementById('preview-experience').textContent = form.querySelector('input[placeholder="Enter previous experience"]').value || 'No previous experience';
+                
+                // Emergency Contact
+                document.getElementById('preview-emergency-name').textContent = form.querySelector('input[placeholder="Enter emergency contact name"]').value;
+                document.getElementById('preview-emergency-relation').textContent = form.querySelector('input[placeholder="Enter relation"]').value;
+                document.getElementById('preview-emergency-mobile').textContent = form.querySelector('input[placeholder="Enter emergency mobile number"]').value;
+                document.getElementById('preview-emergency-address').textContent = form.querySelector('input[placeholder="Enter emergency contact address"]').value;
+            }
+            
+            // Close modal if clicked outside
+            window.addEventListener('click', function(e) {
+                if (e.target === previewModal) {
+                    previewModal.style.display = 'none';
+                }
+            });
+
+            // Employee Form Chatbot
+            document.getElementById("employeeChatToggle").onclick = function() {
+                document.getElementById("employeeChatbot").style.display = "flex";
+            };
+
+            document.getElementById("employeeCloseChat").onclick = function() {
+                document.getElementById("employeeChatbot").style.display = "none";
+            };
+
+            document.getElementById("employeeSendBtn").onclick = sendEmployeeMessage;
+            document.getElementById("employeeChatInput").addEventListener("keypress", function(e) {
+                if (e.key === "Enter") sendEmployeeMessage();
+            });
+
+            function sendEmployeeMessage() {
+                let input = document.getElementById("employeeChatInput");
+                let msg = input.value.trim();
+                if (!msg) return;
+
+                let messages = document.getElementById("employeeChatMessages");
+                let userMsg = document.createElement("div");
+                userMsg.innerHTML = "<b>You:</b> " + msg;
+                messages.appendChild(userMsg);
+
+                // Dummy AI response
+                let botMsg = document.createElement("div");
+                botMsg.innerHTML = "<b>Bot:</b> " + getBotReply(msg);
+                messages.appendChild(botMsg);
+
+                input.value = "";
+                messages.scrollTop = messages.scrollHeight;
+            }
+
+            function getBotReply(msg) {
+                msg = msg.toLowerCase();
+                if (msg.includes("joining")) return "Please submit the form. HR will contact you with next steps.";
+                if (msg.includes("salary")) return "Salary will be as per company norms.";
+                if (msg.includes("contact")) return "You can contact HR at hr@padviram.com.";
+                return "Thank you for your query, our team will respond shortly.";
+            }
+
+            // Add event listeners for the new buttons
+            document.getElementById('printBtn').addEventListener('click', function() {
+                window.print();
+            });
+            
+            document.getElementById('downloadBtn').addEventListener('click', function() {
+                generatePDF();
+            });
+            
+            // Function to generate PDF
+            function generatePDF() {
+                // Use html2canvas to capture the form content
+                html2canvas(document.querySelector('.employee-form-wrapper')).then(canvas => {
+                    const imgData = canvas.toDataURL('image/png');
+                    const pdf = new jspdf.jsPDF('p', 'mm', 'a4');
+                    const imgProps = pdf.getImageProperties(imgData);
+                    const pdfWidth = pdf.internal.pageSize.getWidth();
+                    const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+                    
+                    pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+                    pdf.save('employee_joining_form.pdf');
+                });
+            }
         });
     </script>
 </body>
