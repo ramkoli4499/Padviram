@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "297992746064",
+    "project_id": "padviram-apps",
+    "storage_bucket": "padviram-apps.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297992746064:android:9f7471dc2ccf71410fcd55",
+        "android_client_info": {
+          "package_name": "Padviram.in"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQMnge2tUGUa-FW1td5pb1MtzkbkuSy0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
